@@ -1,0 +1,24 @@
+{% extends "url_shorten/base.html" %}
+{% block content %}
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+<main role="main" class="inner cover">
+<h1 class="cover-heading">URL Shortener!</h1>
+<p class="lead">Enter a URL of your choice and watch us shrink it.</p>
+<br>
+
+<div class="form-row">
+ <div class="form-group col-md-6">
+   <label for="userGuess">URL</label>
+   <input type="text" class="form-control" name = 'url' id="longUrl" placeholder="Long URL">
+ </div>
+ </div>
+<br>
+<div>
+<p class="lead">
+  <a href="#" id= 'shorten' class="btn btn-lg btn-secondary">Shorten</a>
+</p>
+</div>
+<br>
+</main>
+{% endblock content %}

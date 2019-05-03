@@ -1,0 +1,18 @@
+{% extends "url_shorten/base.html" %}
+{% block content %}
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+<main role="main" class="inner cover">
+<h1 class="cover-heading">Success!</h1>
+<p class="lead">Here is your shortened URL:</p>
+<br>
+
+<div class="form-row">
+ <div class="form-group col-md-6">
+   <label for="userGuess">URL</label>
+   <input type="text" class = form-control readonly class="form-control-plaintext" id="shortURL" value="shortURL.com">
+ </div>
+ </div>
+<br>
+</main>
+{% endblock content %}

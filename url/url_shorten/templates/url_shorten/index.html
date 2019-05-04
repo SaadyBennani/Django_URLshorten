@@ -6,7 +6,8 @@
 <h1 class="cover-heading">URL Shortener!</h1>
 <p class="lead">Enter a URL of your choice and watch us shrink it.</p>
 <br>
-
+<form  action="{% url 'url_shorten:shortened' %}" method = 'POST'>
+  {% csrf_token %}
 <div class="form-row">
  <div class="form-group col-md-6">
    <label for="userGuess">URL</label>
@@ -16,9 +17,10 @@
 <br>
 <div>
 <p class="lead">
-  <a href="#" id= 'shorten' class="btn btn-lg btn-secondary">Shorten</a>
+  <button id= 'shorten' class="btn btn-lg btn-secondary">Shorten</button>
 </p>
 </div>
+</form>
 <br>
 </main>
 {% endblock content %}
